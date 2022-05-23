@@ -1,0 +1,346 @@
+{
+    "partition": [
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "DO",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SOL",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "RE",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "MI",
+                    "section": 3,
+                    "size": 2
+                },
+                {
+                    "name": "MI",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SI",
+                    "section": 3,
+                    "size": 2
+                },
+                {
+                    "name": "MI",
+                    "section": 2,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SI",
+                    "section": 2,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SI",
+                    "section": 2,
+                    "size": 2
+                },
+                {
+                    "name": "MI",
+                    "section": 3,
+                    "size": 2
+                },
+                {
+                    "name": "SOL",
+                    "section": 3,
+                    "size": 2
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "DO",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SOL",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "RE",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 3,
+                    "size": 2
+                },
+                {
+                    "name": "MI",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 4,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "MI",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "SI",
+                    "section": 3,
+                    "size": 2
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SI",
+                    "section": 2,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SI",
+                    "section": 2,
+                    "size": 2
+                },
+                {
+                    "name": "MI",
+                    "section": 3,
+                    "size": 2
+                },
+                {
+                    "name": "SOL",
+                    "section": 3,
+                    "size": 2
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "FA",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "SI",
+                    "section": 3,
+                    "size": 2
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 3,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "FA",
+                    "section": 3,
+                    "size": 2
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "LA",
+                    "section": 3,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SOL",
+                    "section": 3,
+                    "size": 3
+                },
+                {
+                    "name": "DO",
+                    "section": 2,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SOL",
+                    "section": 2,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 3,
+                    "size": 1
+                },
+                {
+                    "name": "MI",
+                    "section": 3,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "FA",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "SI",
+                    "section": 3,
+                    "size": 2
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "LA",
+                    "section": 2,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 3,
+                    "size": 2
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "LA",
+                    "section": 3,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "DO",
+                    "section": 2,
+                    "size": 1
+                },
+                {
+                    "name": "SOL",
+                    "section": 3,
+                    "size": 3
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SOL",
+                    "section": 2,
+                    "size": 1
+                }
+            ]
+        },
+        {
+            "allignednotes": [
+                {
+                    "name": "SOL",
+                    "section": 1,
+                    "size": 1
+                },
+                {
+                    "name": "RE",
+                    "section": 3,
+                    "size": 1
+                }
+            ]
+        }
+    ]
+}
