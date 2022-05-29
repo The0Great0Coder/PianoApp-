@@ -55,7 +55,7 @@ class AssistanceScene: SKScene {
         let width = self.view!.frame.size.height / Constants.GetMenuLogosDivision()
         let menuButton = TouchableNode(imagenamed: Constants.getmenubuttonTheme()){
             MIDI.disconnect()
-            self.porte.RemoveAllExpectedNotes()
+            self.porte.CancelAllExpectedNotes()
             self.changeScene()
         }
         menuButton.position = CGPoint(x: -size.width/2 + width , y: size.height/2 - height)
@@ -156,8 +156,9 @@ class AssistanceScene: SKScene {
             }
 
         }
-        
-        porte.RemoveAllExpectedNotes()
+        self.total = 0
+        self.succes = 0
+        porte.CancelAllExpectedNotes()
         randomNoteCreate(category: activeHand)
     }
     

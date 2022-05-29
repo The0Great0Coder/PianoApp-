@@ -142,7 +142,7 @@ class Porte{
         let note : String = Piano.findNote(key: Int(noteNumber))
         
         let noteNode = SKShapeNode(circleOfRadius: CGFloat(self.up))
-        noteNode.name="NEW"
+        noteNode.name="NSUCCESS"
         noteNode.strokeColor = Constants.getExpectedNotesColor()
         noteNode.fillColor = Constants.getExpectedNotesColor()
         noteNode.alpha = 0.8
@@ -172,10 +172,17 @@ class Porte{
         }
     }
     
-    func RemoveAllExpectedNotes(){
+    func CancelAllExpectedNotes(){
         for (notenumber, notenode) in self.ExpectednoteOnPorte {
             self.ExpectednoteOnPorte.removeValue(forKey: notenumber)
             notenode.removeFromParent()
+        }
+    }
+    
+    func RemoveAllExpectedNotes(){
+        for (notenumber, notenode) in self.ExpectednoteOnPorte {
+        animateExpectedNote(note: notenode)
+        self.ExpectednoteOnPorte.removeValue(forKey: notenumber)
         }
     }
     
@@ -187,11 +194,28 @@ class Porte{
         }
     }
     
+    func NoSuccessForExpectedNote(noteNumber:Int){
+        if let noteNode = self.ExpectednoteOnPorte[noteNumber] {
+            noteNode.name="NSUCCESS"
+            noteNode.strokeColor = Constants.getExpectedNotesColor()
+            noteNode.fillColor = Constants.getExpectedNotesColor()
+        }
+    }
+    
     func isEspected(noteNumber:Int) -> Bool{
         return self.ExpectednoteOnPorte[noteNumber] != nil
     }
     func isSuccess(noteNumber:Int) -> Bool{
         return self.ExpectednoteOnPorte[noteNumber]?.name == "SUCCESS"
+    }
+    
+    func isAllSuccessfull() -> Bool {
+        for (_,value) in self.ExpectednoteOnPorte {
+            if value.name == "NSUCCESS" {
+                return false
+            }
+        }
+        return true
     }
     
     func animateExpectedNote(note:SKShapeNode){

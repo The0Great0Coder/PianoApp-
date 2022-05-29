@@ -49,7 +49,7 @@ class SongScene:SKScene{
         let width = self.view!.frame.size.height / Constants.GetMenuLogosDivision()
         let menuButton = TouchableNode(imagenamed: Constants.getmenubuttonTheme()){
             MIDI.disconnect()
-            self.porte.RemoveAllExpectedNotes()
+            self.porte.CancelAllExpectedNotes()
             self.changeScene()
         }
         menuButton.position = CGPoint(x: -size.width/2 + width , y: size.height/2 - height)
@@ -61,7 +61,7 @@ class SongScene:SKScene{
         let height = self.view!.frame.size.height /  Constants.GetMenuLogosDivision()
         let width = self.view!.frame.size.height /  Constants.GetMenuLogosDivision()
         let reButton = TouchableNode(imagenamed: Constants.getrestartbuttonTheme()){
-            self.porte.RemoveAllExpectedNotes()
+            self.porte.CancelAllExpectedNotes()
             self.allignednotesIndex = 0
             self.playSong()
         }
@@ -117,13 +117,15 @@ extension SongScene: MIDIObserver {
             
         case .noteOff(_, let key, _):
             print("off",key)
-            if porte.isEspected(noteNumber: Int(key)) && porte.isSuccess(noteNumber: Int(key)) {
-                porte.RemoveExpectedNote(noteNumber: Int(key))
-                
-                if porte.ExpectednoteOnPorte.isEmpty {
+            if porte.isEspected(noteNumber: Int(key)){
+                if porte.isAllSuccessfull() {
+                    porte.RemoveAllExpectedNotes()
                     allignednotesIndex = allignednotesIndex + 1
                     playSong()
+                } else {
+                    porte.NoSuccessForExpectedNote(noteNumber: Int(key))
                 }
+                
             }else {
                 porte.RemoveNote(noteNumber: Int(key))
             }
